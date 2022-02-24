@@ -200,6 +200,7 @@ a {
   font-size: 16px;
   background-color: gray;
 }
+
 .insideubisoft__title {
   text-align: center;
 }
@@ -220,6 +221,7 @@ a {
   height: 400px;
   width: 400px;
   color: black;
+  
 }
 
 .insideubisoft__img2 {
@@ -241,4 +243,23 @@ a {
 }
 .featuredvideos {
   text-align: center;
+}
+
+.ubiconnect{
+  background-color: #091225;
+  border: 4px sienna solid;
+}
+.ubiconnect__container{
+  display: flex;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+.ubiconnect__img{
+  width: 25%;
+  height: 25%;
+}
+
+.ubiconnect__title{
+  color: white;
 }
