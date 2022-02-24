@@ -99,3 +99,36 @@ a{text-decoration: none;}
 .carosello__titoli{
     display: block;
 }
+
+.news{
+    align-items: center;
+}
+
+.news__container{}
+
+.news__menu{}
+
+.news__menu__item{
+    display: inline-block;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: 1px solid red;
+    }
+    
+.div1 { grid-area: 1 / 1 / 3 / 2; 
+    border: 1px solid black;
+}
+
+.div2 { grid-area: 2 / 1 / 3 / 2; 
+    border: 1px solid greenyellow;
+}
+
+.div3 { grid-area: 2 / 2 / 3 / 2; 
+    border: 1px solid black;
+}
