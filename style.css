@@ -5,6 +5,31 @@ html,body{height: 100%;font-family: 'ubisoftsans-bold'}
 .text-bold{font-size: 50px;}
 a{text-decoration: none;}
 
+.testosection1{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    align-items: center;
+    padding: 40px;
+    display: table-cell;
+    vertical-align: middle;
+
+    
+}
+
+
+.section1 {
+    background-image: url(img/sfondosection1.png);      
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: table;
+    position: relative;
+}
+
+
 .button{
     /*justify-content: center;  
     z-index: 0;
