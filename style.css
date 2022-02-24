@@ -1,134 +1,244 @@
 /* file style.css */
-html,body{height: 100%;font-family: 'ubisoftsans-bold'}
+html,
+body {
+  height: 100%;
+  font-family: "ubisoftsans-bold";
+}
 
 /* GENERAL */
-.text-bold{font-size: 50px;}
-a{text-decoration: none;}
+.text-bold {
+  font-size: 50px;
+}
+a {
+  text-decoration: none;
+}
 
-.button{
-    padding: 18px 90px;
-    background: #316bff;
-    color: #fff;
-    border-radius: 40px;
+.button {
+  padding: 18px 90px;
+  background: #316bff;
+  color: #fff;
+  border-radius: 40px;
 }
 
 /* HEADER */
 
-.header{
-    position: fixed;
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 50px;
-    position: fixed;
-    z-index: 2;
+.header {
+  position: fixed;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 2;
 }
 
-.header__logo{
-    color: #fff;
-    float: left;
-    padding: 10px 50px 10px 30px;
+.header__logo {
+  color: #fff;
+  float: left;
+  padding: 10px 50px 10px 30px;
 }
 
-.header__menu__item{
-    display: inline-block;
-    padding: 0 20px 0 20px;
+.header__menu__item {
+  display: inline-block;
+  padding: 0 20px 0 20px;
 }
 
-.header__menu__item a{
-    color: #fff;
-    padding: 15px;
-    font-weight: bold;
+.header__menu__item a {
+  color: #fff;
+  padding: 15px;
+  font-weight: bold;
 }
 
-.header__menu__search{
-    display: inline-block;
-    padding: 0px 50px 10px 20px;
+.header__menu__search {
+  display: inline-block;
+  padding: 0px 50px 10px 20px;
 }
 
-.imgsizelogo{ width: 90px; height: 30px; }
-.imgsize{width: 25px; height: 25px;}
-
+.imgsizelogo {
+  width: 90px;
+  height: 30px;
+}
+.imgsize {
+  width: 25px;
+  height: 25px;
+}
 
 /* SEZIONE HERO */
 
 .section1 {
-    background-image: url(img/sfondosection1.png);      
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: table;
-    position: relative;
+  background-image: url(img/sfondosection1.png);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative;
 }
 
-.testosection1{
-    font-size: 24px;
-    text-align: center;
-    color: white;
-    align-items: center;
-    padding: 40px;
-    display: table-cell;
-    vertical-align: middle;
+.testosection1 {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  align-items: center;
+  padding: 40px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /* CAROSELLO TITOLI */
-.immagine{
-    width: 200px;
-    padding: 10px;
+.immagine {
+  width: 200px;
+  padding: 10px;
 }
 
-.carosello-games{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+.carosello-games {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
-.carosello-games__locandine{
-    text-align: center;
+.carosello-games__locandine {
+  text-align: center;
 }
 
-.carosello__container{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
+.carosello__container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
-.carosello__titoli{
-    display: block;
+.carosello__titoli {
+  display: block;
 }
 
-.news{
-    align-items: center;
+.news {
+  align-items: center;
 }
 
-.news__container{}
-
-.news__menu{}
-
-.news__menu__item{
-    display: inline-block;
+.news__container {
 }
 
-.parent{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    border: 1px solid red;
-    }
-    
-.div1 { grid-area: 1 / 1 / 3 / 2; 
-    border: 1px solid black;
+.news__menu {
 }
 
-.div2 { grid-area: 2 / 1 / 3 / 2; 
-    border: 1px solid greenyellow;
+.news__menu__item {
+  display: inline-block;
 }
 
-.div3 { grid-area: 2 / 2 / 3 / 2; 
-    border: 1px solid black;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border: 1px solid red;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 3 / 2;
+  border: 1px solid black;
+}
+
+.div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  border: 1px solid greenyellow;
+}
+
+.div3 {
+  grid-area: 2 / 2 / 3 / 2;
+  border: 1px solid black;
+}
+
+.ubistore {
+  padding-top: 16px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.ubistore__title {
+  text-align: center;
+}
+
+.ubistore__imgs {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.ubistore__img1 {
+  padding: 20px;
+  background-image: url(img/ubi_ac-sale-feb22-valfav-908x1080.jpg);
+  background-size: cover;
+  height: 540px;
+  color: white;
+  width: 404px;
+}
+
+.ubistore__img2 {
+  padding: 20px;
+  background-image: url(img/Ubidotcom_ac-dor-nov21_908x1080_NAM-EN.webp);
+  background-size: cover;
+  color: white;
+  height: 540px;
+  width: 404px;
+}
+
+.ubistore__img3 {
+  padding: 20px;
+  background-image: url(img/ubihome-store-promo-r6extraction.webp);
+  background-size: cover;
+  color: white;
+  height: 540px;
+  width: 404px;
+}
+.insideubisoft {
+  padding-top: 16px;
+  font-size: 16px;
+  background-color: gray;
+}
+.insideubisoft__title {
+  text-align: center;
+}
+
+.insideubisoft__imgs {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.insideubisoft__img1 {
+  padding: 20px;
+  background-image: url(img/ubi-inside_ubisoft-inclusive-workplace.webp);
+  background-size: cover;
+  align-items: flex-end;
+  height: 400px;
+  width: 400px;
+  color: black;
+}
+
+.insideubisoft__img2 {
+  padding: 20px;
+  background-image: url(img/ubi-inside_ubisoft-greenweeks.jpg);
+  background-size: cover;
+  color: black;
+  height: 400px;
+  width: 400px;
+}
+
+.insideubisoft__img3 {
+  padding: 20px;
+  background-image: url(img/ubi-inside_ubisoft-fawzi_mesmar.jpg);
+  background-size: cover;
+  color: black;
+  height: 400px;
+  width: 400px;
+}
+.featuredvideos {
+  text-align: center;
 }
