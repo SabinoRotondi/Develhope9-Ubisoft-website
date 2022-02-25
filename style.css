@@ -88,6 +88,7 @@ a {
 }
 
 /* CAROSELLO TITOLI */
+
 .immagine {
   width: 200px;
   padding: 10px;
@@ -113,11 +114,14 @@ a {
   display: block;
 }
 
+/* SEZIONE NEWS */
 .news {
   align-items: center;
 }
 
 .news__container {
+  text-align: center;
+  
 }
 
 .news__menu {
@@ -133,23 +137,36 @@ a {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  border: 1px solid red;
+  
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .div1 {
   grid-area: 1 / 1 / 3 / 2;
-  border: 1px solid black;
 }
 
 .div2 {
-  grid-area: 2 / 1 / 3 / 2;
-  border: 1px solid greenyellow;
+  display: flex;
+  grid-area: 3 / 1 / 3 / 1;
 }
 
 .div3 {
-  grid-area: 2 / 2 / 3 / 2;
-  border: 1px solid black;
+  display: flex;
+  grid-area: 1 / 2 / 1 / 2;
 }
+
+.div4 {
+  display: flex;
+  grid-area: 2 / 2 / 2 / 2;
+}
+
+.div5 {
+  display: flex;
+  grid-area: 3 / 2 / 3 / 2;
+}
+
+/* SEZIONE UBISTORE */
 
 .ubistore {
   padding-top: 16px;
@@ -195,6 +212,9 @@ a {
   height: 540px;
   width: 404px;
 }
+
+/* SEZIONE INSIDE UBISOFT */
+
 .insideubisoft {
   padding-top: 16px;
   font-size: 16px;
@@ -241,9 +261,12 @@ a {
   height: 400px;
   width: 400px;
 }
+
 .featuredvideos {
   text-align: center;
 }
+
+/* SEZIONE UBI CONNECT */
 
 .ubiconnect{
   background-color: #091225;
