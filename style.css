@@ -121,7 +121,6 @@ a {
 
 .news__container {
   text-align: center;
-  
 }
 
 .news__menu {
@@ -137,7 +136,7 @@ a {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  
+
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -241,7 +240,6 @@ a {
   height: 400px;
   width: 400px;
   color: black;
-  
 }
 
 .insideubisoft__img2 {
@@ -268,21 +266,38 @@ a {
 
 /* SEZIONE UBI CONNECT */
 
-.ubiconnect{
+.ubiconnect {
   background-color: #091225;
-  border: 4px sienna solid;
 }
-.ubiconnect__container{
+.ubiconnect__container {
   display: flex;
   justify-content: center;
-  border: 2px solid white;
 }
 
-.ubiconnect__img{
+.ubiconnect__img {
   width: 25%;
   height: 25%;
 }
 
-.ubiconnect__title{
+.ubiconnect__title {
   color: white;
+}
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  background-color: rgb(29, 30, 34);
+}
+
+.footer__menu__item {
+  display: block;
+  font-size: 20px;
+  color: white;
+}
+
+.footer__menu__item2 {
+  display: block;
+  font-size: 16px;
+  color: gray;
 }
