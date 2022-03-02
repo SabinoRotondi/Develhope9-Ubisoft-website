@@ -1,17 +1,10 @@
 /* file style.css */
-html,
-body {
-  height: 100%;
-  font-family: "ubisoftsans-bold";
-}
+html,body {height: 100%;}
 
 /* GENERAL */
-.text-bold {
-  font-size: 50px;
-}
-a {
-  text-decoration: none;
-}
+.text-bold {  font-size: 50px;}
+.text-sub{ font-size: 20px;}
+a {  text-decoration: none;}
 
 .button {
   padding: 18px 90px;
@@ -36,12 +29,12 @@ a {
 .header__logo {
   color: #fff;
   float: left;
-  padding: 10px 50px 10px 30px;
+  padding: 10px 50px 10px 60px;
 }
 
 .header__menu__item {
   display: inline-block;
-  padding: 0 20px 0 20px;
+  padding: 15px 20px 20px 20px;
 }
 
 .header__menu__item a {
@@ -52,7 +45,7 @@ a {
 
 .header__menu__search {
   display: inline-block;
-  padding: 0px 50px 10px 20px;
+  padding: 15px 60px 20px 30px;
 }
 
 .imgsizelogo {
@@ -78,14 +71,22 @@ a {
 }
 
 .testosection1 {
-  font-size: 24px;
+/*  font-size: 50px;*/
   text-align: center;
   color: white;
   align-items: center;
-  padding: 40px;
   display: table-cell;
   vertical-align: middle;
 }
+
+.testosection1 h1{
+  padding-top: 50px;
+}
+
+.testosection1 p{
+  padding: 23px;
+}
+
 
 /* CAROSELLO TITOLI */
 
@@ -98,6 +99,7 @@ a {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding: 50px 50px;
 }
 
 .carosello-games__locandine {
@@ -112,6 +114,8 @@ a {
 
 .carosello__titoli {
   display: block;
+  text-align: left;
+  padding-left: 25px;
 }
 
 /* SEZIONE NEWS */
@@ -136,9 +140,9 @@ a {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
   margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 50px;
 }
 
 .div1 {
@@ -168,7 +172,7 @@ a {
 /* SEZIONE UBISTORE */
 
 .ubistore {
-  padding-top: 16px;
+  padding-top: 50px;
   font-size: 16px;
   background-color: white;
 }
@@ -183,6 +187,7 @@ a {
   align-items: center;
   text-align: center;
   justify-content: center;
+  padding: 50px;
 }
 
 .ubistore__img1 {
