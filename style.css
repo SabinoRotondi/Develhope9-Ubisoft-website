@@ -1,19 +1,60 @@
 /* file style.css */
-html,body {height: 100%;}
+html,body {
+  height: 100%;
+  font-family: "Ubisoft Sans", sans-serif;
+  font-size: 16px;
+}
 
 /* GENERAL */
 .text-bold {  font-size: 50px;}
 .text-sub{ font-size: 20px;}
 a {  text-decoration: none;}
 
+/*.buttons {
+  display: flex;
+  justify-content: center;
+}
+*/
+
+.puntini {
+  display: none;
+  display: block;
+}
+
 .button {
-  padding: 18px 90px;
-  background: #316bff;
+  margin: 4px;
+  padding: 14px 50px;
+  background: #147394;
   color: #fff;
   border-radius: 40px;
+  width: 100px ;
+  justify-content: center;
+
 }
 
 /* HEADER */
+@media (max-width: 768px){
+
+  .puntini {
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+    border: 2px solid red;
+    text-align: left;
+  }
+  .header__logo{display: flex; justify-content: center; align-items: center;}
+
+  .header__menu{display: none;}
+  .header__menu__search img {display: none;}
+
+
+  .buttons {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center; 
+  }  
+}
 
 .header {
   position: fixed;
@@ -25,7 +66,6 @@ a {  text-decoration: none;}
   position: fixed;
   z-index: 2;
 }
-
 .header__logo {
   color: #fff;
   float: left;
@@ -60,14 +100,13 @@ a {  text-decoration: none;}
 /* SEZIONE HERO */
 
 .section1 {
-  background-image: url(img/sfondosection1.png);
+  background-image: url(img/sfondosection1.webp);
   background-position: center center;
-  background-size: cover;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  display: table;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 950px;
+  flex-wrap: wrap;
 }
 
 .testosection1 {
@@ -75,16 +114,21 @@ a {  text-decoration: none;}
   text-align: center;
   color: white;
   align-items: center;
-  display: table-cell;
-  vertical-align: middle;
+  position: relative;
+  margin: auto;
 }
 
-.testosection1 h1{
-  padding-top: 50px;
+.testosection1 h1 {
+  font-family: "Ubisoft Sans Bold" sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+
 }
 
-.testosection1 p{
+.testosection1 p {
   padding: 23px;
+  font-size: 1.8rem;
+
 }
 
 
@@ -306,3 +350,5 @@ a {  text-decoration: none;}
   font-size: 16px;
   color: gray;
 }
+
+
