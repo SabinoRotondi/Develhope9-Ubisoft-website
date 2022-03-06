@@ -106,7 +106,7 @@ a { text-decoration: none;}
 
 
 /* CAROSELLO TITOLI */
-.text-bold { font-family: "Ubisoft Sans Bold" sans-serif;; font-weight: 700; font-size: 2.5rem; padding: 10px;}
+.text-bold { font-family: "Ubisoft Sans Bold" sans-serif; font-weight: 700; font-size: 2.5rem; padding: 10px;}
 .immagine { width: 210px; padding: 0 20px; }
 
 .carosello-games {
@@ -183,12 +183,12 @@ a { text-decoration: none;}
 
 
 .image{
-  width: 100% ;
+  max-width: 30rem ;
   padding: 10px;
 }
 
 .image2{
-  width: 50%;
+  max-width: 16rem;
   padding: 10px;
 }
 
@@ -207,22 +207,7 @@ a { text-decoration: none;}
   display: flex;
 }
 
-.div2 {
-  border: 1px solid red;
-  display: flex;
-}
-
-.div3 {
-  border: 1px solid red;
-  display: flex;
-}
-
-.div4 {
-  border: 1px solid red;
-  display: flex;
-}
-
-.div5 {
+.div2,.div3,.div4,.div5 {
   border: 1px solid red;
   display: flex;
 }
@@ -232,20 +217,27 @@ a { text-decoration: none;}
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 
 
 /* SEZIONE UBISTORE */
+.paddingset{
+  background-color: #f0f2f4;
+  padding: 10px;
+}
 
 .ubistore {
-  background-color: #f0f2f4;
   padding-top: 50px;
   font-size: 16px;
 }
 
 .ubistore__title {
   text-align: center;
+  font-family: "Ubisoft Sans Bold" sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .ubistore__imgs {
@@ -257,42 +249,52 @@ a { text-decoration: none;}
   padding: 50px;
 }
 
+.ubistore__imgs h1{
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
 .ubistore__img1 {
   padding: 20px;
   background-image: url(img/ubi_ac-sale-feb22-valfav-908x1080.jpg);
   background-size: cover;
   height: 540px;
-  color: white;
-  width: 404px;
+  width: 400px;
+  margin: 20px;
 }
 
 .ubistore__img2 {
   padding: 20px;
   background-image: url(img/Ubidotcom_ac-dor-nov21_908x1080_NAM-EN.webp);
   background-size: cover;
-  color: white;
   height: 540px;
-  width: 404px;
+  width: 400px;
+  margin: 20px;
 }
 
 .ubistore__img3 {
   padding: 20px;
   background-image: url(img/ubihome-store-promo-r6extraction.webp);
   background-size: cover;
-  color: white;
   height: 540px;
-  width: 404px;
+  width: 400px;
+  margin: 20px;
 }
 
 /* SEZIONE INSIDE UBISOFT */
 
 .insideubisoft {
-  padding-top: 16px;
-  font-size: 16px;
+  background-color: #f0f2f4;
+  padding: 70px;
 }
 
 .insideubisoft__title {
   text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+  font-weight: bold;
 }
 
 .insideubisoft__imgs {
@@ -304,32 +306,39 @@ a { text-decoration: none;}
 }
 
 .insideubisoft__img1 {
-  padding: 20px;
   background-image: url(img/ubi-inside_ubisoft-inclusive-workplace.webp);
   background-size: cover;
-  align-items: flex-end;
   height: 400px;
   width: 400px;
-  color: black;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
+.insideubisoft__img1 h1{
+  align-content: center;
+}
 .insideubisoft__img2 {
-  padding: 20px;
   background-image: url(img/ubi-inside_ubisoft-greenweeks.jpg);
   background-size: cover;
-  color: black;
   height: 400px;
   width: 400px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .insideubisoft__img3 {
-  padding: 20px;
   background-image: url(img/ubi-inside_ubisoft-fawzi_mesmar.jpg);
   background-size: cover;
-  color: black;
   height: 400px;
   width: 400px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
 }
+
+/* SEZIONE FEATURED */
 
 .featuredvideos {
   background-color: #f0f3f4;
@@ -380,7 +389,7 @@ a { text-decoration: none;}
 
 
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1024px) {
   .main {
     padding-top: 0;
   }
@@ -432,18 +441,13 @@ a { text-decoration: none;}
 
   }
 
-  .div1,
-  .div2,
-  .div3,
-  .div4,
-  .div5,
-  .div6 {
+  .div1,  .div2,  .div3,  .div4,  .div5,  .div6 {
     display: flex;
     flex-direction: column;
   }
+
   .image {
-    width: 100%;
-    height: 100%;
+    width: 90%;
   }
   
   .image2 {
