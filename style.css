@@ -170,7 +170,6 @@ a { text-decoration: none;}
 }
 
 .parent {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -202,18 +201,15 @@ a { text-decoration: none;}
 }
 
 .div1 {
-  border: 1px solid red;
   grid-row: 1 / span 2; 
   display: flex;
 }
 
 .div2,.div3,.div4,.div5 {
-  border: 1px solid red;
   display: flex;
 }
 
 .div6{
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,7 +226,8 @@ a { text-decoration: none;}
 
 .ubistore {
   padding-top: 50px;
-  font-size: 16px;
+  font-size: 1rem;
+  margin: 1%;
 }
 
 .ubistore__title {
@@ -238,105 +235,173 @@ a { text-decoration: none;}
   font-family: "Ubisoft Sans Bold" sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 3%;
 }
 
 .ubistore__imgs {
   display: flex;
-  margin: 20px;
+  width: 80%;
+  height: 80%;
   align-items: center;
-  text-align: center;
-  justify-content: center;
-  padding: 50px;
+  justify-content: space-between;
+  margin: auto;
 }
 
-.ubistore__imgs h1{
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  font-size: 1rem;
+.ubistore__imgs img {
+  width: 100%;
+  height: 100%;
 }
+
+.testoubistore1 {
+  text-align: center;
+  position: absolute;
+  top: 8px;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.testoubistore2 {
+  text-align: center;
+  position: absolute;
+  top: 8px;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
+.testoubistore3 {
+  text-align: center;
+  position: absolute;
+  top: 8px;
+  font-size: 1.5rem;
+  margin: auto;
+}
+
 
 .ubistore__img1 {
-  padding: 20px;
-  background-image: url(img/ubi_ac-sale-feb22-valfav-908x1080.jpg);
-  background-size: cover;
-  height: 540px;
-  width: 400px;
-  margin: 20px;
+position: relative;
+text-align: center;
+color: white;
+width: 30%;
+height: 30%;
 }
 
 .ubistore__img2 {
-  padding: 20px;
-  background-image: url(img/Ubidotcom_ac-dor-nov21_908x1080_NAM-EN.webp);
-  background-size: cover;
-  height: 540px;
-  width: 400px;
-  margin: 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 30%;
+  height: 30%;
 }
 
 .ubistore__img3 {
-  padding: 20px;
-  background-image: url(img/ubihome-store-promo-r6extraction.webp);
-  background-size: cover;
-  height: 540px;
-  width: 400px;
-  margin: 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 30%;
+  height: 30%;
 }
 
 /* SEZIONE INSIDE UBISOFT */
 
 .insideubisoft {
   background-color: #f0f2f4;
-  padding: 70px;
+  padding-top: 50px;
+  font-size: 1rem;
 }
 
 .insideubisoft__title {
   text-align: center;
+  font-family: "Ubisoft Sans Bold" sans-serif;
   font-size: 1.5rem;
-  padding-bottom: 20px;
   font-weight: bold;
+  margin-bottom: 3%;
 }
+
+
 
 .insideubisoft__imgs {
   display: flex;
-  margin: 20px;
+  width: 80%;
+  height: 80%;
   align-items: center;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.insideubisoft__imgs img {
+    width: 100%;
+    height: 100%;  
+    border-radius: 10px;
 }
 
 .insideubisoft__img1 {
-  background-image: url(img/ubi-inside_ubisoft-inclusive-workplace.webp);
-  background-size: cover;
-  height: 400px;
-  width: 400px;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 30%;
+  height: 30%;
 }
 
-.insideubisoft__img1 h1{
-  align-content: center;
-}
 .insideubisoft__img2 {
-  background-image: url(img/ubi-inside_ubisoft-greenweeks.jpg);
-  background-size: cover;
-  height: 400px;
-  width: 400px;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 30%;
+  height: 30%;
 }
 
 .insideubisoft__img3 {
-  background-image: url(img/ubi-inside_ubisoft-fawzi_mesmar.jpg);
-  background-size: cover;
-  height: 400px;
-  width: 400px;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 30%;
+  height: 30%;
 }
+
+
+
+.testoinsideubisoft1 {
+  border-radius: 10px;
+  padding: 6%;
+  text-align: center;
+  position: absolute;  
+  bottom: 0px;
+  font-size: 1.5rem;
+  margin: auto;
+  background: rgb(29, 30, 34, 0.5)
+}
+
+.testoinsideubisoft2 {
+  border-radius: 10px;
+  padding: 6%;
+  text-align: center;
+  position: absolute;  
+  bottom: 0px;
+  font-size: 1.5rem;
+  margin: auto;
+  background: rgb(29, 30, 34, 0.5)
+}
+
+.testoinsideubisoft3 {
+  border-radius: 10px;
+  padding: 6%;
+  text-align: center;
+  position: absolute;  
+  bottom: 0px;
+  font-size: 1.5rem;
+  margin: auto;
+  background: rgb(29, 30, 34, 0.5)
+}
+
+/*
+.filterinsideubisoft {
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 0;
+  position: absolute;  
+  bottom: 8px;
+}
+*/
 
 /* SEZIONE FEATURED */
 
@@ -436,21 +501,27 @@ a { text-decoration: none;}
   .parent {
     display: flex;
     flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
   }
   .text {
 
   }
 
-  .div1,  .div2,  .div3,  .div4,  .div5,  .div6 {
+  .div1, .div2,  .div3,  .div4,  .div5,  .div6 {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
   }
 
   .image {
-    width: 90%;
+    max-width: 30rem;
+    width: 100%;
   }
   
   .image2 {
+    max-width: 30rem;
     width: 100%;
     height: 100%;
   }
