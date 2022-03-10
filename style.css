@@ -144,9 +144,11 @@ a { text-decoration: none;}
 /* SEZIONE NEWS */
 .news {
   align-items: center;
+
 }
 
 .news__container {
+  
   text-align: center;
 }
 
@@ -446,17 +448,19 @@ height: 30%;
 }
 
 /* Footer MENU */
- 
+footer{ background-color: rgb(29, 30, 34);}
+
 .footer__ub{
   display: flex;
-  flex-flow: row nowrap;
+  flex-wrap: wrap;
   align-items: center;
   text-align: left;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   text-decoration: none;
   background-color: rgb(29, 30, 34);  
-  padding: 20px 200px;
+  padding: 20px 60px;
+  max-width: 1440px;
+  margin: 0px auto;
 }
 
 .footersizelogo{
@@ -465,19 +469,20 @@ height: 30%;
 }
 
 .footer__logo1{
+  display: flex;
   order: 1;
-  width: 20%;
+  width: 25%;
 }
 
 .spazio2{
-  display: block;
+  display: flex;
   order: 2;
   width: 50%;
 }
 
 .footer__menu3{
-
-  width: 20%;
+  display: flex;
+  width: 25%;
   order: 3;
   font-size: 2px;
   text-align: end;
@@ -490,7 +495,7 @@ height: 30%;
   align-items: flex-start;
   justify-content: center;
   order: 4;
-  width: 20%;
+  width: 25%;
   height: 300px;
 }
 
@@ -513,7 +518,7 @@ height: 30%;
 
 .footer__menu6{
   display: flex;
-  width: 20%;
+  width: 25%;
   order: 6;
   height: 300px;
   align-items: center;
@@ -660,7 +665,6 @@ height: 30%;
       flex-flow: column;
       align-items: center;
     }
-
 }
 
 @media only screen and (max-width: 700px) {}
