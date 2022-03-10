@@ -450,22 +450,25 @@ height: 30%;
 /* Footer MENU */
 footer{ background-color: rgb(29, 30, 34);}
 
+ul {
+  padding: 0%;
+}
+
 .footer__ub{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  text-align: left;
   justify-content: space-between;
-  text-decoration: none;
   background-color: rgb(29, 30, 34);  
   padding: 20px 60px;
   max-width: 1440px;
   margin: 0px auto;
+  font-size: 0.9rem;
 }
 
 .footersizelogo{
-  width: 122px;
-  height: 39px;
+  width: 30%;
+  padding-left: 5%;
+  padding-top: 5%;
 }
 
 .footer__logo1{
@@ -482,10 +485,7 @@ footer{ background-color: rgb(29, 30, 34);}
 
 .footer__menu3{
   display: flex;
-  width: 25%;
   order: 3;
-  font-size: 2px;
-  text-align: end;
 }
 
 
@@ -498,18 +498,26 @@ footer{ background-color: rgb(29, 30, 34);}
   width: 25%;
   height: 300px;
 }
+.footer__menu4 li {
+  padding: 2%;
+}
+
 
 .footer__menu4 ul{
-  padding: 10px;
 }
 
 .footer__menu5{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  width: 50%;
+  justify-content: center;
   order: 5;
-  height: 300px;
+  width: 50%;
+}
+
+.footer__menu5 li {
+width: 100%;
+padding: 5%;
 }
 
 .footer__menu5 ul{
@@ -521,7 +529,6 @@ footer{ background-color: rgb(29, 30, 34);}
   width: 25%;
   order: 6;
   height: 300px;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
   text-align: end;
@@ -529,7 +536,7 @@ footer{ background-color: rgb(29, 30, 34);}
 
 
 .footer__menu__item {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
   padding: 5px;
 }
@@ -539,9 +546,20 @@ footer{ background-color: rgb(29, 30, 34);}
   color: gray;
   padding: 5px;
 }
+.footer__menu__item__b {
+  justify-content: flex-end;
+  margin-bottom: 5%;
+}
 
+ .footer__menu__item__c {
+   font-size: 0.5rem;
+   color: white;
+ }
 
 @media only screen and (max-width: 1024px) {
+
+  
+  
   .main {
     padding-top: 0;
   }
@@ -660,11 +678,117 @@ footer{ background-color: rgb(29, 30, 34);}
       margin: auto;
     
     }
-
     .footer__ub{
-      flex-flow: column;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .footersizelogo{
+      align-items: center;
+       width: 100%;
+       padding-left: 0%;
+       padding-top: 0%;
+    }
+    
+    .footer__logo1{
+    width: 20%;
+    align-items: center;
+    }
+    
+    .spazio2{
+      display: none;
       align-items: center;
     }
+    
+    .footer__menu3{
+  display: none;
+    }
+    
+    
+    .footer__menu4{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .footer__menu4 li {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5%;
+    }
+    
+    
+    .footer__menu4 ul{
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    
+    .footer__menu5{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    
+    .footer__menu5 li {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5%;
+    }
+    
+    .footer__menu5 ul{
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0%;
+
+    }
+    
+    .footer__menu6{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    
+    
+    .footer__menu__item {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0%;
+    }
+    
+    .footer__menu__item2 {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0%;
+    }
+    .footer__menu__item__b {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0%;
+    }
+    
+     .footer__menu__item__c {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0%;
+     }
+    
 }
 
 @media only screen and (max-width: 700px) {}
